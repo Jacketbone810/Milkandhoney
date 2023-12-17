@@ -12,6 +12,30 @@ li{
     display: inline-block;
 }
 
+button{
+    background-color: #3882F6;
+    border: 1px solid #3882F6;
+    border-radius: 10%;
+    padding: 8px;
+    color: #E5E7EB;
+    width: 100px;
+}
+
+img{
+    border-radius: 10%;
+}
+
+#miasmall{
+    padding-right: 190px;
+}
+
+.section1,
+.section2,
+.section3,
+.section4{
+    padding: 50px;
+}
+
 .header,
 .section1,
 .footer{
@@ -20,12 +44,58 @@ li{
 
 .section3{
     background-color: #E5E7EB;
+    text-align: center;
+}
+
+.section4 div{
+    background-color: #3882F6;
+    color: #E5E7EB;
+    display: flex;
+    gap: 25px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px;
+    margin: 0 190px 0 190px;
+}
+
+.section4 button{
+    border: 1px solid white;
+    flex-grow: 0;
 }
 
 .header{
     display: flex;
-    justify-content: space-between;
-    align-items: center;    
+    justify-content: space-around;
+    align-items: center;  
+    padding: 15px;
+}
+
+.header h1{
+    color: #F9FAF8;
+    font-size: 24px;
+}
+
+.containerColumn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.section2 .containerColumn{
+    gap: 20px;
+}
+
+.containerRow{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.footer{
+    text-align: center;
+    padding: 15px;
+    color: #F9FAF8;
 }
 
 #hero{
@@ -34,6 +104,37 @@ li{
     color: #F9FAF8;
 }
 
-.section1{
+#container{
+    padding-left: 140px;
     display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.section1,
+.section2{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    gap: 25px;
+}
+
+.links,
+.heroSecondary{
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+#Joey,
+#Matt,
+#Sophia,
+#Abby{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
 }
