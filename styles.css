@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+}
+
+.header,
+.section1,
+.footer{
+    background-color: #1F2937;
+}
+
+.section3{
+    background-color: #E5E7EB;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+#hero{
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+
+.section1{
+    display: flex;
+}
