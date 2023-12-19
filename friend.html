@@ -4,20 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mia's Friends</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .containerColumn{
+            justify-content: space-evenly;
+            height: 100%;
+            flex-grow: 0;
+        }
+        .containerRow{
+            height: 100%;
+            align-items: center;
+            flex-grow: 1;
+        }
+        .containerRow img{
+            height: 200px;
+            width: auto;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        <img>
-        <img>
-    </div>
-    <div>
-        <img>
-        <p>ipsum lorem
-        </p>
-    </div>
-    <div>
-        <img>
-        <img>
-    </div>
+    <div class="containerRow" style="height: 100%;">
+        <div class="containerColumn">
+            <a href="./index.html"><img src="/home/jake/Downloads/CuteMia.png"></a>
+            <a href="./index.html"><img src="/home/jake/Downloads/CuteMia.png"></a>
+        </div>
+        <div class="containerRow">
+            <img src="/home/jake/Downloads/CuteMia.png">
+            <p>ipsum lorem
+            </p>
+        </div>
+        <div class="containerColumn">
+            <a href="./index.html"><img src="/home/jake/Downloads/CuteMia.png"></a>
+            <a href="./index.html"><img src="/home/jake/Downloads/CuteMia.png"></a>
+        </div>
+    </div>  
 </body>
 </html>
