@@ -32,6 +32,10 @@ img{
     height: auto;
 }
 
+#cop{
+    height: 80%;
+}
+
 #miasmall{
     padding-right: 190px;
 }
@@ -93,10 +97,20 @@ img{
     gap: 20px;
 }
 
+#main.containerRow{
+    background-color: #F9FAF8;
+}
+
 .containerRow{
     display: flex;
     justify-content: space-evenly;
     width: 100%;
+}
+
+.containerRow #inner{
+    background-color: #3882F6;
+    max-height: 50%;
+    border-radius: 30%;
 }
 
 .footer{

@@ -5,8 +5,12 @@
     let p = document.querySelector('#placeholder');
     let img = document.createElement('img');
     
+    img.id='cop';
+    
     matt.addEventListener('click', function(){
         img.style.display='none';
+        p.style.display = 'inline';
+        p.padding = '20px';
         container.style.flexDirection='row';
         p.textContent='';
         p.textContent='While Guar\'s father was dying he gave \
@@ -19,8 +23,8 @@
     
     joey.addEventListener('click', function(){
         img.style.display='inline';
-        container.style.flexDirection='column';
-        p.textContent='He never sent me anything....';
+        p.padding = 'none';
+        p.style.display = 'none';    
         img.src='./ImACop.jpg';
         container.appendChild(img);
     })
