@@ -159,3 +159,19 @@ img{
     align-items: center;
     gap: 10px;
 }
+
+#cap,
+#aqu,
+#pis,
+#ari,
+#tau,
+#gem,
+#can,
+#leo,
+#vir,
+#lib,
+#sco,
+#sag{
+    height: 50px;
+    width: auto;
+}
