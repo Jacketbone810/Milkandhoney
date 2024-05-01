@@ -38,6 +38,23 @@
     img.id='cop';
     
     matt.addEventListener('click', function(){
+        if (container.contains(cap)){
+            container.removeChild(cap);
+            container.removeChild(aqu);
+            container.removeChild(pis);
+            container.removeChild(ari);
+            container.removeChild(tau);
+            container.removeChild(gem);
+            container.removeChild(can);
+            container.removeChild(leo);
+            container.removeChild(vir);
+            container.removeChild(lib);
+            container.removeChild(sco);
+            container.removeChild(sag);
+        }
+        if(!container.contains(p)){
+            container.appendChild(p);
+        }
         img.style.display='none';
         p.style.display = 'inline';
         p.padding = '20px';
@@ -52,9 +69,7 @@
     })
     
     joey.addEventListener('click', function(){
-        if (container.contains(topDiv)){
-            container.removeChild(topDiv);
-            container.removeChild(botDiv);
+        if (container.contains(cap)){
             container.removeChild(cap);
             container.removeChild(aqu);
             container.removeChild(pis);
@@ -76,6 +91,10 @@
     })
 
     abby.addEventListener('click', function(){
+        if (container.contains(p)){
+            container.removeChild(p);
+        }
+
         container.style.flexDirection='row';
 
         img.style.display = 'none';
@@ -106,5 +125,5 @@
         container.appendChild(sco);
         container.appendChild(sag);
 
-        
+
     })
