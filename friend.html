@@ -12,13 +12,16 @@
             flex-grow: 0;
         }
         .containerRow{
-            height: 100%;
+            height: 30%;
             align-items: center;
-            flex-grow: 1;
+            flex-shrink: 1;
         }
         .containerRow img{
             height: 200px;
             width: auto;
+        }
+        .containerRow#inner{
+            height: 50%;
         }
     </style>
 </head>
@@ -34,8 +37,8 @@
         </div>
     </div>
     <div class="containerColumn">
-        <h3>Let's see what they have to say....</h3>
         <div class="containerColumn" id='main' style="height: 100%;">
+            <h3>Let's see what they have to say....</h3>
             <div class="containerRow">
                 <img id='Matt' src="./imgs/friends/matt.png">
                 <img id='Joey' src="./imgs/friends/joey.png">

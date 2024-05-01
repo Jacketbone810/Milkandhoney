@@ -87,6 +87,7 @@
         p.padding = 'none';
         p.style.display = 'none';    
         img.src='./imgs/friends/ImACop.jpg';
+        img.style.height= '100%';
         container.appendChild(img);
     })
 
