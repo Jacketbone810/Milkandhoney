@@ -76,13 +76,7 @@
     })
 
     abby.addEventListener('click', function(){
-        container.style.flexDirection='column';
-        topDiv.style.flexDirection='row';
-        botDiv.style.flexDirection='row';
-        topDiv.style.flexWrap='none';
-
-        container.appendChild(topDiv);
-        container.appendChild(botDiv);
+        container.style.flexDirection='row';
 
         img.style.display = 'none';
         cap.src='./imgs/zodiac/capricorn.png';
@@ -98,17 +92,19 @@
         sco.src='./imgs/zodiac/Scorpio.png';
         sag.src='./imgs/zodiac/Sagittarius.png';
 
-        topDiv.appendChild(cap);
-        topDiv.appendChild(aqu);
-        topDiv.appendChild(pis);
-        topDiv.appendChild(ari);
-        topDiv.appendChild(tau);
-        topDiv.appendChild(gem);
+        container.appendChild(cap);
+        container.appendChild(aqu);
+        container.appendChild(pis);
+        container.appendChild(ari);
+        container.appendChild(tau);
+        container.appendChild(gem);
 
-        botDiv.appendChild(can);
-        botDiv.appendChild(leo);
-        botDiv.appendChild(vir);
-        botDiv.appendChild(lib);
-        botDiv.appendChild(sco);
-        botDiv.appendChild(sag);
+        container.appendChild(can);
+        container.appendChild(leo);
+        container.appendChild(vir);
+        container.appendChild(lib);
+        container.appendChild(sco);
+        container.appendChild(sag);
+
+        
     })
