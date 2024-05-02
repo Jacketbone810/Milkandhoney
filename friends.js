@@ -4,11 +4,12 @@
     const abby = document.querySelector('#abby');
 
     let container = document.querySelector('#inner');
-    let topDiv = document.createElement('div');
-    let botDiv = document.createElement('div');
     let p = document.querySelector('#placeholder');
 
+    let zod = document.createElement('div');
+
     let img = document.createElement('img');
+
     const cap = document.createElement('img');
     const aqu = document.createElement('img');
     const pis = document.createElement('img');
@@ -38,19 +39,20 @@
     img.id='cop';
     
     matt.addEventListener('click', function(){
-        if (container.contains(cap)){
-            container.removeChild(cap);
-            container.removeChild(aqu);
-            container.removeChild(pis);
-            container.removeChild(ari);
-            container.removeChild(tau);
-            container.removeChild(gem);
-            container.removeChild(can);
-            container.removeChild(leo);
-            container.removeChild(vir);
-            container.removeChild(lib);
-            container.removeChild(sco);
-            container.removeChild(sag);
+        if (container.contains(zod)){
+            container.removeChild(zod);
+            zod.removeChild(cap);
+            zod.removeChild(aqu);
+            zod.removeChild(pis);
+            zod.removeChild(ari);
+            zod.removeChild(tau);
+            zod.removeChild(gem);
+            zod.removeChild(can);
+            zod.removeChild(leo);
+            zod.removeChild(vir);
+            zod.removeChild(lib);
+            zod.removeChild(sco);
+            zod.removeChild(sag);
         }
         if(!container.contains(p)){
             container.appendChild(p);
@@ -69,23 +71,25 @@
     })
     
     joey.addEventListener('click', function(){
-        if (container.contains(cap)){
-            container.removeChild(cap);
-            container.removeChild(aqu);
-            container.removeChild(pis);
-            container.removeChild(ari);
-            container.removeChild(tau);
-            container.removeChild(gem);
-            container.removeChild(can);
-            container.removeChild(leo);
-            container.removeChild(vir);
-            container.removeChild(lib);
-            container.removeChild(sco);
-            container.removeChild(sag);
+        if (container.contains(zod)){
+            container.removeChild(zod);
+            zod.removeChild(cap);
+            zod.removeChild(aqu);
+            zod.removeChild(pis);
+            zod.removeChild(ari);
+            zod.removeChild(tau);
+            zod.removeChild(gem);
+            zod.removeChild(can);
+            zod.removeChild(leo);
+            zod.removeChild(vir);
+            zod.removeChild(lib);
+            zod.removeChild(sco);
+            zod.removeChild(sag);
+        }
+        if (container.contains(p)){
+            container.removeChild(p);
         }
         img.style.display='inline';
-        p.padding = 'none';
-        p.style.display = 'none';    
         img.src='./imgs/friends/ImACop.jpg';
         img.style.height= '100%';
         container.appendChild(img);
@@ -96,7 +100,13 @@
             container.removeChild(p);
         }
 
+        container.appendChild(zod);
+
         container.style.flexDirection='row';
+
+        zod.style.display='flex';
+        zod.style.justifyContent='space-evenly';
+        zod.style.width='100%';
 
         img.style.display = 'none';
         cap.src='./imgs/zodiac/capricorn.png';
@@ -112,19 +122,123 @@
         sco.src='./imgs/zodiac/Scorpio.png';
         sag.src='./imgs/zodiac/Sagittarius.png';
 
-        container.appendChild(cap);
-        container.appendChild(aqu);
-        container.appendChild(pis);
-        container.appendChild(ari);
-        container.appendChild(tau);
-        container.appendChild(gem);
+        zod.appendChild(cap);
+        zod.appendChild(aqu);
+        zod.appendChild(pis);
+        zod.appendChild(ari);
+        zod.appendChild(tau);
+        zod.appendChild(gem);
+        zod.appendChild(can);
+        zod.appendChild(leo);
+        zod.appendChild(vir);
+        zod.appendChild(lib);
+        zod.appendChild(sco);
+        zod.appendChild(sag);
 
-        container.appendChild(can);
-        container.appendChild(leo);
-        container.appendChild(vir);
-        container.appendChild(lib);
-        container.appendChild(sco);
-        container.appendChild(sag);
 
+    })
 
+    cap.addEventListener('click', function(){
+        container.style.flexDirection='column';
+        p.textContent='January - The World: Happy New Year! Now\'s the time to \
+                        take the actions to propel yourself forward. And don\'t \
+                        worry if you\'re feeling all stressed. You have to balance \
+                        your negative and positive emotions to stay in control. '
+        if (!container.contains(p)){
+            container.appendChild(p);
+        }     })
+
+    aqu.addEventListener('click', function(){
+        container.style.flexDirection='column';
+        p.textContent='February - Knight of Pentacles: Don\'t be afraid to have questions\
+                        about your life. Analyzing certain aspects might lead to revelations or acceptance \
+                        that you\'re on the right track. Don\'t overthink it though! '
+        if (!container.contains(p)){
+            container.appendChild(p);
+        }     })
+
+    pis.addEventListener('click', function(){
+        container.style.flexDirection='column';
+        p.textContent='March - Seven of Wands: Following the tracks of the precious months, this month is about\
+                            doing what you want to do and act more positively. Don\'t let negativity stop you from what YOU want and \
+                            from being the light in this world you are. '
+        if (!container.contains(p)){
+            container.appendChild(p);
+        }     })
+
+    ari.addEventListener('click', function(){
+        container.style.flexDirection='column';
+        p.textContent='April - Four of Swords: Don\'t isolate yourself. It\'s hard not to when you feel pessimistic,\
+                            but come out of your cave and let in the light. Now\'s the time to collaborate. Bounce ideas off close ones \
+                            and see what sticks. '
+        if (!container.contains(p)){
+            container.appendChild(p);
+        }     })
+
+    tau.addEventListener('click', function(){
+        container.style.flexDirection='column';
+        p.textContent='May - The Magician: The end is here! Goodbye Saint Rose :(. This card is labeled 1 in Tarot decks,\
+                        and the number literally represents a new start. Now\'s the time for the future. To succeed, make sure you\
+                        listen to those around you, the ones who have your best interest at heart. They are here to help.'
+        if (!container.contains(p)){
+            container.appendChild(p);
+        }     })
+
+    gem.addEventListener('click', function(){
+        container.style.flexDirection='column';
+        p.textContent='June - Ace of Cups: Focus on your relationships: new or old. Feel your emotions regarding them and yourself. \
+                        Sometimes the only way out is through.'
+        if (!container.contains(p)){
+            container.appendChild(p);
+        }     })
+    can.addEventListener('click', function(){
+        container.style.flexDirection='column';
+        p.textContent='July - Ace of Wands: Remember all those idea you had before? Now\'s the time to execute them. However, remember\
+                        life is a double-edged sword. Don\'t give too much of yourself to your plans. Remember your boundaries and stick to them!'
+        if (!container.contains(p)){
+            container.appendChild(p);
+        }     })
+
+    leo.addEventListener('click', function(){
+        container.style.flexDirection='column';
+        p.textContent='August - Nine of Pentacles: This card gives a feeling of independence and harmony. Things are coming together. \
+                        But, don\'t get ahead of yourself. Take it at a confident pace, and don\'t wear yourself out early in the game.  '
+        if (!container.contains(p)){
+            container.appendChild(p);
+        }     })
+
+    vir.addEventListener('click', function(){
+        container.style.flexDirection='column';
+        p.textContent='September - Seven of Swords: Be careful of the people you\'re spending your time with and energy on. You\'re able \
+                        to face the truth and be honest. Avoid disloyal and dishonest people (duh).'
+        if (!container.contains(p)){
+            container.appendChild(p);
+        } 
+    })
+
+    lib.addEventListener('click', function(){
+        container.style.flexDirection='column';
+        p.textContent='October - Six of Pentacles: Be wary of people who don\'t make you feel good. If you have a bad feeling, take it as a \
+                        warning. Take caution not to fall in destructive cycles with those around you as well as yourself.  '
+        if (!container.contains(p)){
+            container.appendChild(p);
+        } 
+    })
+
+    sco.addEventListener('click', function(){
+        container.style.flexDirection='column';
+        p.textContent='Novemmber - The Hanged Man: Take your circumstances and consider how you can improve your life. You are in charge of your \
+                        own life, don\'t forget it. Use challenges as opppurtunities to adapt and grow.'
+        if (!container.contains(p)){
+            container.appendChild(p);
+        } 
+    })
+
+    sag.addEventListener('click', function(){
+        container.style.flexDirection='column';
+        p.textContent='December - Two of Wands: Sometimes, just because you can, does not mean you should. You should have courage to do the right\
+                         thing. You have the power you need, but everyone else may not be on your level.'
+        if (!container.contains(p)){
+            container.appendChild(p);
+        } 
     })
