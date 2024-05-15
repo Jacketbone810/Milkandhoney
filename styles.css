@@ -150,10 +150,10 @@ img{
     color: #E5E7EB;
 }
 
-#Joey,
-#Matt,
-#Sophia,
-#Abby{
+.Joey,
+.Matt,
+.Sophia,
+.Abby{
     display: flex;
     flex-direction: column;
     align-items: center;

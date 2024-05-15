@@ -1,7 +1,7 @@
 
-    const matt = document.querySelector('#Matt');
-    const joey = document.querySelector('#Joey');
-    const abby = document.querySelector('#abby');
+    const matt = document.querySelector('.Matt');
+    const joey = document.querySelector('.Joey');
+    const abby = document.querySelector('.abby');
 
     let container = document.querySelector('#inner');
     let p = document.querySelector('#placeholder');
@@ -37,7 +37,7 @@
     sag.id='sag';
     
     img.id='cop';
-    
+
     matt.addEventListener('click', function(){
         if (container.contains(zod)){
             container.removeChild(zod);
