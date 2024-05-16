@@ -39,6 +39,7 @@
     img.id='cop';
 
     matt.addEventListener('click', function(){
+        console.log(queryString);
         if (container.contains(zod)){
             container.removeChild(zod);
             zod.removeChild(cap);
