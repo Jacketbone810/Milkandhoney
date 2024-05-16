@@ -1,7 +1,7 @@
 
     const matt = document.querySelector('.Matt');
     const joey = document.querySelector('.Joey');
-    const abby = document.querySelector('.abby');
+    const abby = document.querySelector('.Abby');
 
     let container = document.querySelector('#inner');
     let p = document.querySelector('#placeholder');
@@ -68,8 +68,9 @@
         His father siad that weapon used to be in their family for generations\
         but got stolen and probably stolen around the world. noe he\'s going \
         to go get it back!';
+        alert('nice');
     })
-    
+
     joey.addEventListener('click', function(){
         if (container.contains(zod)){
             container.removeChild(zod);
