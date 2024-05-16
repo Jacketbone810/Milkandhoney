@@ -4,6 +4,7 @@
     const abby = document.querySelector('.Abby');
 
     let container = document.querySelector('#inner');
+    let container2 = document.querySelector('#inner2');
     let p = document.querySelector('#placeholder');
 
     let zod = document.createElement('div');
@@ -39,9 +40,8 @@
     img.id='cop';
 
     matt.addEventListener('click', function(){
-        console.log(queryString);
-        if (container.contains(zod)){
-            container.removeChild(zod);
+        if (container2.contains(zod)){
+            container2.removeChild(zod);
             zod.removeChild(cap);
             zod.removeChild(aqu);
             zod.removeChild(pis);
@@ -56,7 +56,7 @@
             zod.removeChild(sag);
         }
         if(!container.contains(p)){
-            container.appendChild(p);
+            container2.appendChild(p);
         }
         img.style.display='none';
         p.style.display = 'inline';
@@ -69,12 +69,11 @@
         His father siad that weapon used to be in their family for generations\
         but got stolen and probably stolen around the world. noe he\'s going \
         to go get it back!';
-        alert('nice');
     })
 
     joey.addEventListener('click', function(){
-        if (container.contains(zod)){
-            container.removeChild(zod);
+        if (container2.contains(zod)){
+            container2.removeChild(zod);
             zod.removeChild(cap);
             zod.removeChild(aqu);
             zod.removeChild(pis);
@@ -88,25 +87,24 @@
             zod.removeChild(sco);
             zod.removeChild(sag);
         }
-        if (container.contains(p)){
-            container.removeChild(p);
+        if (container2.contains(p)){
+            container2.removeChild(p);
         }
         img.style.display='inline';
         img.src='./imgs/friends/ImACop.jpg';
         img.style.height= '100%';
-        container.appendChild(img);
+        container2.appendChild(img);
     })
 
     abby.addEventListener('click', function(){
         if (container.contains(p)){
-            container.removeChild(p);
+            container2.removeChild(p);
         }
 
-        container.appendChild(zod);
-
-        container.style.flexDirection='row';
+        container2.appendChild(zod);
 
         zod.style.display='flex';
+        zod.style.flexDirection='row';
         zod.style.justifyContent='space-evenly';
         zod.style.width='100%';
 
