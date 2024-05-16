@@ -160,6 +160,18 @@ img{
     gap: 10px;
 }
 
+.Sophia[id~='index']{
+    height: 200\px;
+    width: auto;
+    max-height: 200px;
+}
+
+#sophImg{
+    width: auto;
+    height: 180px;
+    max-height: 180px;
+}
+
 #cap,
 #aqu,
 #pis,
