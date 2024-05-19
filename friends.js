@@ -41,6 +41,7 @@
 
     matt.addEventListener('click', function(){
         if (container2.contains(zod)){
+            container.style.flexDirection='column';
             container2.removeChild(zod);
             zod.removeChild(cap);
             zod.removeChild(aqu);
@@ -61,7 +62,6 @@
         img.style.display='none';
         p.style.display = 'inline';
         p.padding = '20px';
-        container.style.flexDirection='row';
         p.textContent='';
         p.textContent='While Guar\'s father was dying he gave \
         him a book that talks about a prophecy about this ancient weapon\
@@ -86,9 +86,12 @@
             zod.removeChild(lib);
             zod.removeChild(sco);
             zod.removeChild(sag);
+            p.textContent='';
         }
-        if (container2.contains(p)){
+        if (container.contains(p)&&container2.contains(p)){
             container2.removeChild(p);
+        } else {
+            container.removeChild(p);
         }
         img.style.display='inline';
         img.src='./imgs/friends/ImACop.jpg';
@@ -97,7 +100,7 @@
     })
 
     abby.addEventListener('click', function(){
-        if (container.contains(p)){
+        if (container2.contains(p)){
             container2.removeChild(p);
         }
 
