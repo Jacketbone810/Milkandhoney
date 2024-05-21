@@ -1,7 +1,7 @@
 
-    const matt = document.querySelector('.Matt');
-    const joey = document.querySelector('.Joey');
-    const abby = document.querySelector('.Abby');
+    let matt = document.querySelector('.Matt');
+    let joey = document.querySelector('.Joey');
+    let abby = document.querySelector('.Abby');
 
     let container = document.querySelector('#inner');
     let container2 = document.querySelector('#inner2');
@@ -11,18 +11,18 @@
 
     let img = document.createElement('img');
 
-    const cap = document.createElement('img');
-    const aqu = document.createElement('img');
-    const pis = document.createElement('img');
-    const ari = document.createElement('img');
-    const tau = document.createElement('img');
-    const gem = document.createElement('img');
-    const can = document.createElement('img');
-    const leo = document.createElement('img');
-    const vir = document.createElement('img');
-    const lib = document.createElement('img');
-    const sco = document.createElement('img');
-    const sag = document.createElement('img'); 
+    let cap = document.createElement('img');
+    let aqu = document.createElement('img');
+    let pis = document.createElement('img');
+    let ari = document.createElement('img');
+    let tau = document.createElement('img');
+    let gem = document.createElement('img');
+    let can = document.createElement('img');
+    let leo = document.createElement('img');
+    let vir = document.createElement('img');
+    let lib = document.createElement('img');
+    let sco = document.createElement('img');
+    let sag = document.createElement('img'); 
 
     cap.id='cap';
     aqu.id='aqu';
@@ -36,7 +36,7 @@
     lib.id='lib';
     sco.id='sco';
     sag.id='sag';
-    
+     
     img.id='cop';
 
     matt.addEventListener('click', function(){
@@ -60,8 +60,8 @@
             container2.appendChild(p);
         }
         img.style.display='none';
+        p.style.grow='1';
         p.style.display = 'inline';
-        p.padding = '20px';
         p.textContent='';
         p.textContent='While Guar\'s father was dying he gave \
         him a book that talks about a prophecy about this ancient weapon\
@@ -138,7 +138,18 @@
         zod.appendChild(sco);
         zod.appendChild(sag);
 
-
+        cap.className='zodi';
+        aqu.className='zodi';
+        pis.className='zodi';
+        ari.className='zodi';
+        tau.className='zodi';
+        gem.className='zodi';
+        can.className='zodi';
+        leo.className='zodi';
+        vir.className='zodi';
+        lib.className='zodi';
+        sco.className='zodi';
+        sag.className='zodi';
     })
 
     cap.addEventListener('click', function(){
@@ -149,7 +160,10 @@
                         your negative and positive emotions to stay in control. '
         if (!container.contains(p)){
             container.appendChild(p);
-        }     })
+        }     
+        p.style.paddingBottom='50px';
+        p.style.backgroundColor='rgb(165, 198, 250)';
+    })
 
     aqu.addEventListener('click', function(){
         container.style.flexDirection='column';
@@ -158,7 +172,9 @@
                         that you\'re on the right track. Don\'t overthink it though! '
         if (!container.contains(p)){
             container.appendChild(p);
-        }     })
+        }     
+        p.style.backgroundColor='rgb(165, 198, 250)';
+    })
 
     pis.addEventListener('click', function(){
         container.style.flexDirection='column';
@@ -167,7 +183,9 @@
                             from being the light in this world you are. '
         if (!container.contains(p)){
             container.appendChild(p);
-        }     })
+        }     
+        p.style.backgroundColor='rgb(165, 198, 250)';
+    })
 
     ari.addEventListener('click', function(){
         container.style.flexDirection='column';
@@ -176,7 +194,9 @@
                             and see what sticks. '
         if (!container.contains(p)){
             container.appendChild(p);
-        }     })
+        }     
+        p.style.backgroundColor='rgb(165, 198, 250)';
+    })
 
     tau.addEventListener('click', function(){
         container.style.flexDirection='column';
@@ -185,7 +205,9 @@
                         listen to those around you, the ones who have your best interest at heart. They are here to help.'
         if (!container.contains(p)){
             container.appendChild(p);
-        }     })
+        }     
+        p.style.backgroundColor='rgb(165, 198, 250)';
+    })
 
     gem.addEventListener('click', function(){
         container.style.flexDirection='column';
@@ -193,14 +215,18 @@
                         Sometimes the only way out is through.'
         if (!container.contains(p)){
             container.appendChild(p);
-        }     })
+        }     
+        p.style.backgroundColor='rgb(165, 198, 250)';
+    })
     can.addEventListener('click', function(){
         container.style.flexDirection='column';
         p.textContent='July - Ace of Wands: Remember all those idea you had before? Now\'s the time to execute them. However, remember\
                         life is a double-edged sword. Don\'t give too much of yourself to your plans. Remember your boundaries and stick to them!'
         if (!container.contains(p)){
             container.appendChild(p);
-        }     })
+        }     
+        p.style.backgroundColor='rgb(165, 198, 250)';
+    })
 
     leo.addEventListener('click', function(){
         container.style.flexDirection='column';
@@ -208,7 +234,9 @@
                         But, don\'t get ahead of yourself. Take it at a confident pace, and don\'t wear yourself out early in the game.  '
         if (!container.contains(p)){
             container.appendChild(p);
-        }     })
+        }     
+        p.style.backgroundColor='rgb(165, 198, 250)';
+    })
 
     vir.addEventListener('click', function(){
         container.style.flexDirection='column';
@@ -217,6 +245,7 @@
         if (!container.contains(p)){
             container.appendChild(p);
         } 
+        p.style.backgroundColor='rgb(165, 198, 250)';
     })
 
     lib.addEventListener('click', function(){
@@ -226,6 +255,7 @@
         if (!container.contains(p)){
             container.appendChild(p);
         } 
+        p.style.backgroundColor='rgb(165, 198, 250)';
     })
 
     sco.addEventListener('click', function(){
@@ -235,6 +265,7 @@
         if (!container.contains(p)){
             container.appendChild(p);
         } 
+        p.style.backgroundColor='rgb(165, 198, 250)';
     })
 
     sag.addEventListener('click', function(){
@@ -244,4 +275,7 @@
         if (!container.contains(p)){
             container.appendChild(p);
         } 
+        p.style.backgroundColor='rgb(165, 198, 250)';
     })
+
+
