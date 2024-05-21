@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css">
     <style>
         .containerColumn{
-            justify-content: space-evenly;
+            justify-content: space-between;
             height: 100%;
-            flex-grow: 0;
+            flex-grow: 1;
         }
         .containerRow{
             height: 30%;
@@ -38,7 +38,7 @@
     </div>
     <div class="containerColumn">
         <div class="containerColumn" id='main' style="height: 100%;">
-            <h3>Let's see what they have to say....</h3>
+            <h3 id="preamble">Let's see what they have to say....</h3>
             <div class="containerRow">
                 <img class='Matt' src="./imgs/friends/matt.png">
                 <img class='Joey' src="./imgs/friends/joey.png">
@@ -48,7 +48,7 @@
             <div class="containerRow" id="inner">
                 <div class="containerColumn" id="inner2">
                     <p id="default">Click on a friend to see what they have
-                    to say! Or, click on the cute girlt to go back to the 
+                    to say! <br> Or, click on the cute girl to go back to the 
                     home page.
                     </p>
                     <p id="placeholder"></p>
