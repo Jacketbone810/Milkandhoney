@@ -39,6 +39,10 @@
      
     img.id='cop';
 
+    p.style.height='300px';
+    p.style.width='75%';
+    p.style.fontSize='30px';
+
     matt.addEventListener('click', function(){
         if (container2.contains(zod)){
             container.style.flexDirection='column';
@@ -60,14 +64,16 @@
             container2.appendChild(p);
         }
         img.style.display='none';
+        
         p.style.grow='1';
         p.style.display = 'inline';
         p.textContent='';
-        p.textContent='While Guar\'s father was dying he gave \
-        him a book that talks about a prophecy about this ancient weapon\
-        that will on day stop evil events from happening in the wworld!\
-        His father siad that weapon used to be in their family for generations\
-        but got stolen and probably stolen around the world. noe he\'s going \
+        p.style.backgroundColor='rgb(165, 198, 250)';
+        p.textContent='While Guar\'s father was dying, he gave \
+        him a book that talks about a prophecy \n about this ancient weapon\
+        that will \n one day stop evil events from happening in the world!\
+        His father said that weapon used to be in their family for generations\
+        but got stolen and probably stolen around the world. Now he\'s going \
         to go get it back!';
     })
 
@@ -88,10 +94,12 @@
             zod.removeChild(sag);
             p.textContent='';
         }
-        if (container.contains(p)&&container2.contains(p)){
-            container2.removeChild(p);
-        } else {
-            container.removeChild(p);
+        if (container.contains(p)){
+            if (container.contains(p)&&container2.contains(p)){
+                container2.removeChild(p);
+            } else {
+                container.removeChild(p);
+            }
         }
         img.style.display='inline';
         img.src='./imgs/friends/ImACop.jpg';
@@ -100,8 +108,11 @@
     })
 
     abby.addEventListener('click', function(){
-        if (container2.contains(p)){
+        
+        if(container2.contains(p)){
             container2.removeChild(p);
+        } else if (container.contains(p)){
+            container.removeChild(p);
         }
 
         container2.appendChild(zod);
@@ -161,7 +172,6 @@
         if (!container.contains(p)){
             container.appendChild(p);
         }     
-        p.style.paddingBottom='50px';
         p.style.backgroundColor='rgb(165, 198, 250)';
     })
 
